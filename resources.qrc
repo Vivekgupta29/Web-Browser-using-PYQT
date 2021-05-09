@@ -1,0 +1,12 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file alias="back-arrow.svg">svgs/back-arrow.svg</file>
+    <file alias="forward-arrow.svg">svgs/forward-arrow.svg</file>
+    <file alias="refresh.svg">svgs/refresh.svg</file>
+    <file alias="icon.svg">svgs/icon.svg</file>
+    <file alias="home.svg">svgs/home.svg</file>
+    <file alias="add.svg">svgs/add.svg</file>
+    <file alias="stop.svg">svgs/stop.svg</file>
+    
+</qresource>
+</RCC>
