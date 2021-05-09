@@ -98,7 +98,7 @@ class MainWindow(QMainWindow):
         #this will start with a new tab with particular link
         self.add_new_tab(QUrl('http://www.google.com'), 'Homepage')
 
-        self.bookmarks_load()
+#         self.bookmarks_load()
        
         self.show()
 
@@ -109,19 +109,19 @@ class MainWindow(QMainWindow):
 
 
     #for bookmark
-    def Bookmark(self):
-    try:
-        qurl = QUrl(self.urlbar.text())
-        print('Here we are using the QUrl toString method: %s ---> Type: %s' % (qurl.toString(), type(qurl)))
-        url = qurl.toString()
-        print('Here we are storing the new string to a new variable: %s ---> Type: %s' % (url, type(url)))
-        b = open(os.path.join('bookmarks', 'bookmarks.txt'), "wb")
-        self.bookmarks_write = pickle.dump(url, b)
-        b.close()
-    except:
-        print("Crash - Bookmarks not stored")
+#     def Bookmark(self):
+#     try:
+#         qurl = QUrl(self.urlbar.text())
+#         print('Here we are using the QUrl toString method: %s ---> Type: %s' % (qurl.toString(), type(qurl)))
+#         url = qurl.toString()
+#         print('Here we are storing the new string to a new variable: %s ---> Type: %s' % (url, type(url)))
+#         b = open(os.path.join('bookmarks', 'bookmarks.txt'), "wb")
+#         self.bookmarks_write = pickle.dump(url, b)
+#         b.close()
+#     except:
+#         print("Crash - Bookmarks not stored")
 
-    self.bookmark_btn.setText("★")
+#     self.bookmark_btn.setText("★")
 
 
     #this will add new tab()
